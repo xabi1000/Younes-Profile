@@ -1,0 +1,21 @@
+---
+import { service } from '../../data/services.json';
+import '../../css/services.css';
+---
+
+<section class='services section' id='services'>
+  <h2 class='section__titlel'>Services</h2>
+  <span class='section__subtitle'>What i offer</span>
+
+  <div class='services__container container grid section__border'>
+    {
+      service.map(({ icon, title, description }) => (
+        <div class='services__card'>
+          <i class={icon} />
+          <h2 class='services__title'>{title}</h2>
+          <p class='services__description'>{description}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>

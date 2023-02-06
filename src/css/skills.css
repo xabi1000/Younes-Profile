@@ -1,0 +1,91 @@
+.skills__container {
+  row-gap: 2.5rem;
+  justify-content: center;
+}
+
+.skills__card {
+  position: relative;
+  width: 289px;
+  min-height: 361px;
+  background-color: var(--container-color);
+  text-align: center;
+  padding: 3.5rem 1rem;
+  border-radius: 25% 2%;
+  outline: 2.3px solid transparent;
+  outline-offset: 11px;
+  transition: outline 1.5s ease;
+  cursor: pointer;
+  transition: background 0.5s; /* for dark mode animation */
+  transition: outline 2s;
+}
+
+.skills__card i {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  transition: transform 0.9s;
+}
+
+.skills__title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1.5rem;
+
+  /* GRADIENTE COLOR TEXT */
+  background: rgb(217, 149, 27);
+  background: linear-gradient(
+    90deg,
+    rgba(217, 149, 27, 0.4163865375251663) 0%,
+    rgba(217, 33, 205, 0.6936974618949142) 74%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.skills__description {
+  line-height: 1.5;
+}
+
+.skills__card:hover i {
+  transform: rotateY(360deg);
+}
+
+.skills__card:hover {
+  outline: 2.3px solid var(--text-color-light);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+
+@media screen and (min-width: 576px) {
+  .skills__container {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 5rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 767px) {
+}
+
+/*
+***************** LARGE DEVICES *****************
+*/
+
+@media screen and (min-width: 1023px) {
+  .skills__container {
+    grid-template-columns: repeat(3, max-content);
+    /* column-gap: 2rem; */
+  }
+  .skills__card {
+    width: 303px;
+    min-height: 345px;
+
+    padding: 1.5rem;
+  }
+  .skills__card i {
+    font-size: 2.5rem;
+  }
+}

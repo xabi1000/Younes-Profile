@@ -1,0 +1,53 @@
+{
+  "qualification": [
+    {
+      "icon": "ri-pencil-ruler-line",
+      "title": "Education"
+    }
+  ],
+  "infoData": [
+    {
+      "name": "GCSE",
+      "country": "Algeria shcool segundary",
+      "year": "2001-2004"
+    },
+    {
+      "name": "Carpentry certificate",
+      "country": "Ministry of Training and Professional Development",
+      "year": "2005-2007"
+    },
+    {
+      "name": "Carpentry certificate craftsman",
+      "country": "Cuisine & Dressing DZ-Solutions Company",
+      "year": "2011"
+    }
+  ],
+  "work": [
+    {
+      "icon": "ri-building-line",
+      "title": "Work"
+    }
+  ],
+  "workData": [
+    {
+      "company": "Fabrication dressing cuisine",
+      "workstation": "Carpentry manager: My main role was to oversee and direct all operations of the company, from design and planning to construction and project delivery. I was responsible for setting and achieving company goals and objectives, ensuring deadlines and quality standards were met.",
+      "year": "2019-2022"
+    },
+    {
+      "company": "MDM Hasnaoui",
+      "workstation": "Lead Carpenter: Leading a team of carpenters and overseeing carpentry projects.",
+      "year": "2012-2019"
+    },
+    {
+      "company": "Nadjar wood ",
+      "workstation": "Carpenter: Performing carpentry tasks independently under the supervision of a foreman or supervisor.",
+      "year": "2007-2011"
+    },
+    {
+      "company": " Eurl dz confort meubles",
+      "workstation": "Apprentice Carpenter: Performing simple tasks under the supervision of experienced carpenters, and continuing training.",
+      "year": "2004-2006"
+    }
+  ]
+}

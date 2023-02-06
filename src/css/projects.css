@@ -1,0 +1,145 @@
+@import './vars.module.css';
+@import './normalize.css';
+
+/* Ocultar scrollbar en todos los navegadores */
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: transparent;
+}
+
+/* Estilo para thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+}
+
+/* Estilo para thumb al pasar mouse encima */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+}
+
+/* estilos para firefox*/
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-color) transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+}
+/* Ocultar scrollbar en todos los navegadores */
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--body-color);
+  transition: background 0.5s; /* for dark mode animation */
+}
+
+:is(h1, h2, h3) {
+  font-family: var(--title-font);
+  font-weight: var(--font-medium);
+}
+
+.main {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(6, 100vw);
+  scroll-behavior: smooth;
+  padding: 0;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg__image {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+.main::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #140202bf;
+  width: 100%;
+}
+.header {
+  padding: 1rem 1.5rem;
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  max-width: 100%;
+  background-color: #0000005c;
+}
+
+:is(.nav, .menu) {
+  display: flex;
+  gap: 1.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu {
+  justify-content: space-around;
+}
+
+.nav__link {
+  margin-right: auto;
+}
+
+.project {
+  min-height: 100vh;
+  padding: 5.5rem 2.5rem 0 2.5rem;
+  padding: 7rem 2rem;
+}
+
+.project__title {
+  text-align: center;
+}
+.project__text {
+  line-height: 1.3rem;
+  font-size: 0.9rem;
+}
+.images__container {
+  columns: 4 321px;
+  column-gap: 0.5rem;
+}
+
+.image__item {
+  margin-bottom: 0.5rem;
+}
+
+.image__item img {
+  object-fit: cover;
+  border-radius: 7px;
+  max-height: 100%;
+}
+
+/* ********************  MEDIA QUERY  *************************8 */
+
+@media (min-width: 1200px) {
+  .nav {
+    flex-wrap: no-wrap;
+  }
+  .project {
+    padding: 3.5rem 2.5rem 0 2.5rem;
+    text-align: center;
+  }
+  .project__text {
+    font-size: 1.3rem;
+    width: 70ch;
+
+    margin-inline: auto;
+    line-height: 1.7rem;
+  }
+
+  .image__item {
+  }
+}

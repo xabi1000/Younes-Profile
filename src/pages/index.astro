@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Home from '../components/sections/Home.astro';
+import Skills from '../components/sections/Skills.astro';
+import Qualification from '../components/sections/Qualification.astro';
+import CoverProjects from '../components/sections/CoverProjects.astro';
+import Testimonial from '../components/sections/Testimonial.astro';
+import Contact from '../components/sections/Contact.astro';
+import Footer from '../components/sections/Footer.astro';
+import ScrollUp from '../components/ScrollUp.astro';
+import DownloadCV from '../components/DownloadCV.astro';
+---
+
+<Layout title='Younes - Profile'>
+  <DownloadCV />
+  <Home />
+  <Qualification />
+  <Skills />
+  <CoverProjects />
+  <!-- <Testimonial /> -->
+  <Contact />
+  <Footer />
+  <ScrollUp />
+
+  <script>
+    import '../js/main.js';
+  </script>
+</Layout>

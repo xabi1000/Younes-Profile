@@ -1,0 +1,206 @@
+/*=============== GOOGLE FONTS ===============*/
+@import './fonts.module.css';
+@import './vars.module.css';
+@import './normalize.css';
+/*=============== BASE ===============*/
+:root {
+  --first-color: hsl(207, 65%, 65%);
+  --title-color: hsl(207, 4%, 16%);
+  --text-color: hsl(207, 4%, 28%);
+  --text-color-light: hsl(207, 4%, 56%);
+  --body-color: hsl(207, 4%, 99%);
+  --container-color: #dfc5ea96;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background 0.5s; /* for dark mode animation */
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-weight: var(--font-medium);
+}
+
+/*=============== THEME ===============*/
+
+.change-theme {
+  font-style: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/*========== Variables Dark theme ==========*/
+
+body.dark-theme {
+  --title-color: hsl(207, 4%, 95%);
+  --text-color: hsl(207, 4%, 65%);
+  --body-color: hsl(207, 4%, 10%);
+  --container-color: hsl(207, 4%, 12%);
+}
+
+/*==========
+    Color changes in some parts of
+    the website, in light theme
+==========*/
+
+.dark-theme .nav,
+.dark-theme .nav__menu,
+.dark-theme .scrollup {
+  background-color: var(--container-color);
+  box-shadow: © 4px 20px Dihsla(207, 24%, 8%, 0.4);
+}
+
+.dark-theme .home__shape-wawes,
+.dark-theme .home__shape-circle,
+.dark-theme .qualification__img,
+.dark-theme .testimonial__img {
+  filter: invert(1);
+}
+
+.dark-theme .home__social-link {
+  color: var(--title-color);
+}
+.dark-theme .section__border {
+  border-bottom: 1px solid hsl(207, 4%, 32%);
+}
+
+.dark-theme::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: hsl(207, 4%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(207, 4%, 25%);
+}
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(207, 4%, 35%);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 2.5rem;
+}
+
+.section__border {
+  border-bottom: 1px solid var(--title-color);
+  padding-bottom: 3.5rem;
+}
+
+.section__titlel,
+.section__subtitle {
+  text-align: center;
+}
+
+.section__titlel {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: rgb(217, 149, 27);
+  background: linear-gradient(
+    361deg,
+    rgba(217, 149, 27, 0.4163865375251663) 0%,
+    rgba(64, 95, 189, 0.6936974618949142) 51%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--h3-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 3rem;
+}
+
+.main {
+  overflow: hidden; /* For animation */
+  padding: 0 1.3rem;
+  position: relative;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(207, 4%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: hsl(207, 4%, 65%);
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 0.5rem;
+  background-color: hsl(207, 4%, 55%);
+}
+
+/*
+=============== BREAKPOINTS ===============
+*/
+
+@media screen and (min-width: 1023px) {
+  .container {
+    margin-inline: auto;
+  }
+  .change-theme {
+    color: var(--text-color-light);
+  }
+  .change-theme:hover {
+    color: var(--title-color);
+  }
+
+  .section {
+    padding-block: 8rem 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__border {
+    padding-bottom: 6rem;
+  }
+  .section__subtitle {
+    padding-bottom: 5rem;
+  }
+}
+
+.text__gradient {
+  background: rgb(59, 150, 236);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 150, 236, 1) 0%,
+    rgba(106, 210, 203, 1) 17%,
+    rgba(220, 86, 230, 1) 41%,
+    rgba(236, 40, 180, 1) 88%,
+    rgba(255, 0, 41, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}

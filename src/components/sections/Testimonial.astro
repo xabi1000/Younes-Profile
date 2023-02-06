@@ -1,0 +1,44 @@
+---
+import { testimonials } from '../../data/testimonial.json';
+import '../../css/testimonial.css';
+---
+
+<section id='testimonials' class='testimonial section'>
+  <h2 class='section__titlel'>Testimonials</h2>
+  <span class='section__subtitle'>My client saying</span>
+
+  <div class='container section__border'>
+    <div class='testimonial__container swiper'>
+      <div class='swiper-wrapper'>
+        <!-- +++++++++++++++++===========TESTIMONIAL+++++++++++++++++=========== -->
+        {
+          testimonials.map(({ description, name, subtitle }) => (
+            <div class='testimonial__content swiper-slide'>
+              <p class='testimonial__description'>{description}</p>
+              <div>
+                <h3 class='testimonial__name'>{name}</h3>
+                <span class='testimonial__subtitle'>{subtitle}</span>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+      <div class='swiper-button-next'>
+        <i class='ri-arrow-right-s-line'></i>
+      </div>
+
+      <div class='swiper-button-prev'>
+        <i class='ri-arrow-left-s-line'></i>
+      </div>
+    </div>
+  </div>
+  <img
+    src='/assets/img/shape-wawes.svg'
+    class='testimonial__img'
+    alt=' testimonial image'
+  />
+</section>
+
+<script>
+  import '../../js/swiper-testimonials.js';
+</script>

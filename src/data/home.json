@@ -1,0 +1,48 @@
+{
+  "imageProfile": [
+    "/assets/img/you1.jpg",
+    "/assets/img/you1.webp"
+  ],
+  "SocialMedia": [
+    {
+      "icon": "ri-facebook-circle-line",
+      "href": "https://www.facebook.com/profile.php?id=100026480538360"
+    },
+    {
+      "icon": "ri-whatsapp-line",
+      "href": "https://api.whatsapp.com/send?phone=+447946299689&text=Good day, and welcome! How can I be of help?"
+    },
+    {
+      "icon": "ri-messenger-line",
+      "href": "https://m.me/100003219723050"
+    }
+  ],
+  "info": [
+    {
+      "title": "Biografy",
+      "description": "Hi, I am Younes, a carpenter with +15 years of experience. I have worked on a wide range of projects, from furniture to building renovations. I am skilled with both manual and power tools and am always willing to learn more. My priority is always to do high quality work in order to satisfy my clients."
+    },
+    {
+      "title": "Services",
+      "description": "Furniture manufacturing and repair, Door and window installation, Building renovation, Structure fabrication"
+    },
+    {
+      "title": "Hobbies",
+      "description": "I am an individual who enjoys staying physically and mentally fit through regular exercise, and I also have a love for travel and discovering new cultures. I am constantly seeking to stay up-to-date with current events and technology, particularly in the field of carpentry."
+    }
+  ],
+  "info2": [
+    {
+      "title": "Years Of Experience",
+      "description": "+15"
+    },
+    {
+      "title": "Completed Projects",
+      "description": "+100"
+    },
+    {
+      "title": "Company Worked",
+      "description": "04"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+---
+import '../css/header.css';
+import { menuLinks } from '../data/header.json';
+---
+
+<header class='header' id='header'>
+  <nav class='nav container'>
+    <a href='/' class='nav__logo'> Younes</a>
+    <div class='nav__menu' id='navMenu'>
+      <ul class='nav__list grid'>
+        {
+          menuLinks.map(({ menuLink, menuIcon, classColor }) => (
+            <li class='nav__item'>
+              <a
+                href={`#${menuLink.toLowerCase()}`}
+                data-id={menuLink.toLowerCase()}
+                class={`nav__link ${classColor}`}
+              >
+                <i class={`${menuIcon} menu__icon`} />
+                {menuLink}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <div class='nav__close' id='navClose'>
+        <i class='ri-close-line'></i>
+      </div>
+    </div>
+    <div class='nav__buttons'>
+      <!-- THEME CHANGE -->
+      <i class='ri-moon-line change-theme' id='themeButton'></i>
+      <!-- TOGGLE BTN -->
+      <div class='nav__toggle' id='navToggle'>
+        <i class='ri-menu-4-line menu__icon'></i>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  import '../js/header.js';
+</script>

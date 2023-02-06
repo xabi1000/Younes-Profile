@@ -1,0 +1,34 @@
+{
+  "skills": [
+    {
+      "icon": "ri-earth-line",
+      "title": "Lenguages",
+      "description": "English: A1 <br>Fransh: C1 <br>Spanish: B1 <br><br>I am thrilled to embark on the journey of learning English. My goal is to reach fluency within the next year to better serve my clients and colleagues. Thank you for your understanding and support."
+    },
+    {
+      "icon": "ri-layout-4-line",
+      "title": "Technical skills",
+      "description": "Ability to handle electric and mechanical woodworking tools with precision and a solid understanding of cutting and finishing techniques."
+    },
+    {
+      "icon": "ri-quill-pen-line",
+      "title": "Measuring and cutting",
+      "description": "Experience in measuring and marking wood with precision, and in using manual and electric tools to cut wood accurately."
+    },
+    {
+      "icon": "ri-keynote-fill",
+      "title": "Assembly",
+      "description": "Experience in assembling different pieces of wood using a variety of joint techniques to achieve a solid and safe structure."
+    },
+    {
+      "icon": "ri-send-to-back",
+      "title": "Finishing techniques",
+      "description": "Knowledge in applying various finishing techniques to wood, including sanding, varnishing, painting and more, to achieve an attractive and durable finish in carpentry projects."
+    },
+    {
+      "icon": "ri-vip-crown-line",
+      "title": "Creativity and design",
+      "description": "Creativity and design skills to create unique and attractive furniture and carpentry objects, using a variety of techniques and styles."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "project": [
+    {
+      "imageJpg": "/assets/img/covers_projects/cover__work-video.jpg",
+      "imageWebp": "/assets/img/covers_projects/cover__work-video.webp",
+      "subtitle": "Furniture",
+      "title": "Videos",
+      "icon": "ri-arrow-right-line"
+    },
+    {
+      "imageJpg": "/assets/img/covers_projects/cover__kichen.jpg",
+      "imageWebp": "/assets/img/covers_projects/cover__kichen.webp",
+      "subtitle": "Furniture",
+      "title": "Kichens",
+      "icon": "ri-arrow-right-line"
+    },
+    {
+      "imageJpg": "/assets/img/covers_projects/cover__dressing.jpg",
+      "imageWebp": "/assets/img/covers_projects/cover__dressing.webp",
+      "subtitle": "Furniture",
+      "title": "Dressings",
+      "icon": "ri-arrow-right-line"
+    },
+    {
+      "imageJpg": "/assets/img/covers_projects/cover__door.jpg",
+      "imageWebp": "/assets/img/covers_projects/cover__door.webp",
+      "subtitle": "Furniture",
+      "title": "Doors",
+      "icon": "ri-arrow-right-line"
+    },
+    {
+      "imageJpg": "/assets/img/covers_projects/cover__bathroom.jpg",
+      "imageWebp": "/assets/img/covers_projects/cover__bathroom.webp",
+      "subtitle": "Furniture",
+      "title": "Bathroomes",
+      "icon": "ri-arrow-right-line"
+    },
+    {
+      "imageJpg": "/assets/img/covers_projects/cover__office.jpg",
+      "imageWebp": "/assets/img/covers_projects/cover__office.webp",
+      "subtitle": "Furniture",
+      "title": "Office",
+      "icon": "ri-arrow-right-line"
+    }
+  ]
+}

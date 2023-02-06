@@ -1,0 +1,56 @@
+---
+import MetaTags from '../layouts/MetaTags.astro';
+import Nav from '../components/projects/Nav.astro';
+import '../css/projects.css';
+
+import { paragraph, sections } from '../data/projects.json';
+---
+
+<MetaTags title='My projects' imageUrl='/assets/img/you.jpg' />
+<body>
+  <Nav />
+
+  <main class='main'>
+    <img
+      class='bg__image'
+      src='/assets/img/bg-projects.jpg'
+      alt='background image'
+    />
+    {
+      sections.map(({ name, title, image, imageMedia }) => (
+        <section class='project' id={name.toLowerCase()}>
+          <h2 class='project__title'>{name.toLocaleUpperCase()}</h2>
+          {imageMedia === true ? (
+            <p class='project__text'>{paragraph.replaceAll('{name}', name)}</p>
+          ) : (
+            <p class='project__text'>I hope you like it</p>
+          )}
+          <div class='images__container'>
+            {image.map((IMG) => (
+              <div class='image__item'>
+                {imageMedia === true ? (
+                  <img src={IMG} alt={`${name} image`} />
+                ) : (
+                  <video
+                    src={IMG}
+                    controls=''
+                    muted=''
+                    preload='none'
+                    width='350px'
+                    height='350px'
+                  >
+                    <img
+                      src='/assets/img/younesWorking.jpg'
+                      width='200px'
+                      height='150px'
+                    />
+                  </video>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </main>
+</body>

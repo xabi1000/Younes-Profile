@@ -1,0 +1,39 @@
+---
+---
+
+<button>Download CV</button>
+
+<style>
+  button {
+    border: 1px solid rgb(209, 228, 45);
+    border-radius: 5px;
+    bottom: auto;
+    font-size: 1.1rem;
+    font-weight: 700;
+    left: 7rem;
+    padding: 1rem 2rem;
+    position: absolute;
+    right: auto;
+    top: 1rem;
+    z-index: 100;
+    background: rgb(59, 150, 236);
+    background: linear-gradient(149deg, #ec28b4 19%, #5f0475);
+    color: #ffffff;
+  }
+</style>
+
+<script>
+  const btn = document.querySelector('button');
+
+  const handleDownloadCV = () => {
+    const URL = '/cv/CVyounes.pdf';
+    const link = document.createElement('a');
+    link.href = URL;
+    link.download = 'CVyounes.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  };
+
+  btn.addEventListener('click', handleDownloadCV);
+</script>

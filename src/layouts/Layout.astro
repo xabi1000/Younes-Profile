@@ -1,0 +1,19 @@
+---
+import '../css/styles.css';
+import MetaTags from './MetaTags.astro';
+import Header from '../components/Header.astro';
+import 'remixicon/fonts/remixicon.css';
+
+export interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<MetaTags title={title} />
+<body>
+  <Header />
+  <main class='main'>
+    <slot />
+  </main>
+</body>

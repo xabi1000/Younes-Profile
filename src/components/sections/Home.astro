@@ -1,0 +1,73 @@
+---
+import data from '../../data/home.json';
+import '../../css/home.css';
+const { imageProfile, SocialMedia, info, info2 } = data;
+---
+
+<section class='home section' id='home'>
+  <div class='home__container container grid section__border'>
+    <div class='home__data grid'>
+      <h1 class='home__title text__gradient'>
+        <strong>Younes CHABI</strong><br /> Expert craftsman who will assist you
+        in achieving your woodworking goals with success
+      </h1>
+      <div class='home__blob grid'>
+        <div class='home__profile'>
+          <!-- <picture>
+            <source srcset={imageProfile[1]} type='image/webp' />
+            <source srcset={imageProfile[0]} type='image/jpeg' />
+            <img src={imageProfile[0]} alt='Image Profile' title='Younes' />
+          </picture> -->
+        </div>
+        <img
+          class='home__shape-wawes'
+          src='/assets/img/shape-wawes.svg'
+          alt='shape wawes'
+        />
+        <img
+          class='home__shape-circle'
+          src='/assets/img/shape-circle.svg'
+          alt='shape circle'
+        />
+      </div>
+
+      <ul class='home__social'>
+        {
+          SocialMedia.map(({ icon, href }) => (
+            <li class='home__social-item'>
+              <a
+                target='_blank'
+                rel='noreferrer noopener'
+                href={href}
+                class='home__social-link'
+              >
+                <i class={icon} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class='home__info'>
+      {
+        info.map(({ title, description }) => (
+          <div>
+            <h3 class='home__info-title'>{title}</h3>
+            <p class='home__info-description'>{description}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class='home__info'>
+      {
+        info2.map(({ title, description }) => (
+          <div>
+            <h3 class='home__info-title'>{title}</h3>
+            <p class='home__info-number'>{description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

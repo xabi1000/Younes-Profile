@@ -1,0 +1,56 @@
+---
+import {
+  qualification,
+  infoData,
+  work,
+  workData,
+} from '../../data/qualification.json';
+import '../../css/qualification.css';
+---
+
+<section class='qualification section' id='qualification'>
+  <h2 class='section__titlel'>Qualification</h2>
+  <span class='section__subtitle'>Experience & Education</span>
+
+  <div class='qualification__container container grid section__border'>
+    <div class='qualification__content'>
+      <h3 class='qualification__title'>
+        <i class={qualification[0].icon}></i>{qualification[0].title}
+      </h3>
+      <div class='qualification__info'>
+        {
+          infoData.map(({ country, name, year }) => (
+            <div>
+              <h3 class='qualification__info-title'>{name}</h3>
+              <span class='qualification__info-year'>{year}</span>
+              <span class='qualification__info-describtion'>{country}</span>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class='qualification__content'>
+      <h3 class='qualification__title'>
+        <i class={work[0].icon}></i>{work[0].title}
+      </h3>
+      <div class='qualification__info'>
+        {
+          workData.map(({ workstation, company, year }) => (
+            <div>
+              <h3 class='qualification__info-title'>{company}</h3>
+              <span class='qualification__info-year'>{year}</span>
+              <span class='qualification__info-describtion'>{workstation}</span>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <img
+      src='/assets/img/shape-circle.svg'
+      alt='qualification image'
+      class='qualification__image'
+    />
+  </div>
+</section>

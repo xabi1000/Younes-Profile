@@ -1,0 +1,34 @@
+{
+  "menuLinks": [
+    {
+      "menuLink": "Home",
+      "menuIcon": "ri-home-smile-line",
+      "classColor": "active-link"
+    },
+    {
+      "menuLink": "Qualification",
+      "menuIcon": "ri-book-open-line",
+      "classColor": ""
+    },
+    {
+      "menuLink": "Skills",
+      "menuIcon": "ri-briefcase-line",
+      "classColor": ""
+    },
+    {
+      "menuLink": "Projects",
+      "menuIcon": "ri-image-line",
+      "classColor": ""
+    },
+    {
+      "menuLink": "Testimonials",
+      "menuIcon": "ri-briefcase-line",
+      "classColor": ""
+    },
+    {
+      "menuLink": "Contact",
+      "menuIcon": "ri-chat-1-line",
+      "classColor": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "information": [
+    {
+      "title": "Phone number",
+      "info": "+447946299689",
+      "href": "tel:+447946299689"
+    },
+    {
+      "title": "Messenger",
+      "info": "@YounesChabi",
+      "href": "https://m.me/100003219723050"
+    },
+    {
+      "title": "WhatsApp",
+      "info": "Chabi Younes",
+      "href": "https://api.whatsapp.com/send?phone=+447946299689&text=Good day, and welcome! How can I be of help?"
+    },
+    {
+      "title": "LinkedIn",
+      "info": "Younes Chabi",
+      "href": "https://www.linkedin.com/in/younes-chabi-b3488b180/"
+    }
+  ]
+}

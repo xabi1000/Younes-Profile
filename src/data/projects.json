@@ -1,0 +1,107 @@
+{
+  "paragraph": "As a leading expert in {name} furniture design, I am thrilled to present this collection of my latest projects. Each piece on display has been crafted with the highest standards of quality and attention to detail. From sleek and elegant vanities to innovative storage solutions, these {name} furnishings will elevate any decor style. Allow my expertise in the field and exceptional carpentry skills to bring your dream {name} to life.",
+  "sections": [
+    {
+      "imageMedia": true,
+      "name": "dressings",
+      "title": "Dressings",
+      "image": [
+        "/assets/img/dressings/dressing1.jpg",
+        "/assets/img/dressings/dressing2.jpg",
+        "/assets/img/dressings/dressing3.jpg",
+        "/assets/img/dressings/dressing4.jpg",
+        "/assets/img/dressings/dressing5.jpg",
+        "/assets/img/dressings/dressing6.jpg",
+        "/assets/img/dressings/dressing7.jpg",
+        "/assets/img/dressings/dressing8.jpg",
+        "/assets/img/dressings/dressing9.jpg",
+        "/assets/img/dressings/dressing10.jpg",
+        "/assets/img/dressings/dressing12.jpg",
+        "/assets/img/dressings/dressing13.jpg"
+      ]
+    },
+    {
+      "imageMedia": true,
+      "name": "kichens",
+      "title": "Kichens",
+      "image": [
+        "/assets/img/kitchens/kitchen1.jpg",
+        "/assets/img/kitchens/kitchen3.jpg",
+        "/assets/img/kitchens/kitchen4.jpg",
+        "/assets/img/kitchens/kitchen5.jpg",
+        "/assets/img/kitchens/kitchen6.jpg",
+        "/assets/img/kitchens/kitchen7.jpg",
+        "/assets/img/kitchens/kitchen8.jpg",
+        "/assets/img/kitchens/kitchen9.jpg",
+        "/assets/img/kitchens/kitchen10.jpg",
+        "/assets/img/kitchens/kitchen11.jpg",
+        "/assets/img/kitchens/kitchen12.jpg",
+        "/assets/img/kitchens/kitchen13.jpg",
+        "/assets/img/kitchens/kitchen14.jpg",
+        "/assets/img/kitchens/kitchen15.jpg",
+        "/assets/img/kitchens/kitchen16.jpg",
+        "/assets/img/kitchens/kitchen17.jpg",
+        "/assets/img/kitchens/kitchen18.jpg",
+        "/assets/img/kitchens/kitchen19.jpg",
+        "/assets/img/kitchens/kitchen20.jpg",
+        "/assets/img/kitchens/kitchen21.jpg",
+        "/assets/img/kitchens/kitchen22.jpg",
+        "/assets/img/kitchens/kitchen23.jpg",
+        "/assets/img/kitchens/kitchen24.jpg"
+      ]
+    },
+    {
+      "imageMedia": true,
+      "name": "doors",
+      "title": "Doors",
+      "image": [
+        "/assets/img/doors/door1.jpg",
+        "/assets/img/doors/door2.jpg",
+        "/assets/img/doors/door3.jpg",
+        "/assets/img/doors/door4.jpg",
+        "/assets/img/doors/door5.jpg",
+        "/assets/img/doors/door6.jpg",
+        "/assets/img/doors/door7.jpg",
+        "/assets/img/doors/door8.jpg",
+        "/assets/img/doors/door9.jpg",
+        "/assets/img/doors/door10.jpg",
+        "/assets/img/doors/door11.jpg",
+        "/assets/img/doors/door12.jpg"
+      ]
+    },
+    {
+      "imageMedia": true,
+      "name": "bathroomes",
+      "title": "Bathroomes",
+      "image": [
+        "/assets/img/bathroomes/bathroomes1.jpg",
+        "/assets/img/bathroomes/bathroomes2.jpg"
+      ]
+    },
+    {
+      "imageMedia": true,
+      "name": "offices",
+      "title": "Offices",
+      "image": [
+        "/assets/img/offices/offices1.jpg"
+      ]
+    },
+    {
+      "imageMedia": false,
+      "name": "videos",
+      "title": "Videos",
+      "image": [
+        "/assets/video/bedroom1.mp4",
+        "/assets/video/bedroom2.mp4",
+        "/assets/video/door1.mp4",
+        "/assets/video/dressing1.mp4",
+        "/assets/video/dressing2.mp4",
+        "/assets/video/dressing3.mp4",
+        "/assets/video/kitchen1.mp4",
+        "/assets/video/kitchen2.mp4",
+        "/assets/video/kitchen3.mp4",
+        "/assets/video/video11.mp4"
+      ]
+    }
+  ]
+}

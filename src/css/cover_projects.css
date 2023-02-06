@@ -1,0 +1,170 @@
+.projects__container {
+  overflow: initial;
+}
+
+.projects__content {
+  display: grid;
+  justify-content: center;
+}
+
+.projects__image {
+  width: 270px;
+  height: 181px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.projects__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  text-align: center;
+  display: block;
+}
+
+.projects__title {
+  text-align: center;
+  font-size: var(--h2-font-size);
+  margin: 0.5rem 0 1.25rem;
+
+  /* GRADIENTE COLOR TEXT */
+  background: rgb(217, 149, 27);
+  background: linear-gradient(
+    90deg,
+    rgba(217, 149, 27, 0.4163865375251663) 0%,
+    rgba(217, 33, 205, 0.6936974618949142) 74%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.projects__button {
+  color: var(--titel-color);
+  display: flex;
+  font-size: var(--small-font-size);
+  gap: 1rem;
+  outline: 2px solid wheat;
+  border-radius: 3px;
+  padding: 0.7rem;
+}
+
+.projects__button:hover {
+  color: green;
+  outline: 2px solid green;
+}
+
+.projects__button i {
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+
+.projects__button:hover i {
+  transform: translateX(0.25rem);
+}
+
+.projects__container .swiper-button-prev::after,
+.projects__container .swiper-button-next::after {
+  content: '';
+}
+.projects__container .swiper-button-prev,
+.projects__container .swiper-button-next {
+  width: initial;
+  height: initial;
+  margin: initial;
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+.projects__container .swiper-button-prev {
+  left: -1rem;
+  top: 4.5rem;
+}
+
+.projects__container .swiper-button-next {
+  right: -1rem;
+  top: 4.5rem;
+}
+
+.projects__container .swiper-slide {
+  margin-bottom: 4.5rem;
+}
+
+.projects__container .swiper-pagination-bullets {
+  bottom: 0;
+}
+.projects__container .swiper-pagination-bullet {
+  background-color: var(--text-color-light);
+  opacity: initial;
+}
+
+.projects__container .swiper-pagination-bullet-active {
+  background-color: var(--title-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .projects__image {
+    max-width: 200px;
+    justify-self: center;
+  }
+}
+
+/* For medium devices */
+
+@media screen and (min-width: 576px) {
+  .projects__container {
+    width: 401px;
+    overflow: hidden;
+  }
+
+  .projects__container .swiper-button-prev {
+    left: 1rem;
+  }
+
+  .projects__container .swiper-button-next {
+    right: 1rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .projects__container {
+    width: 511px;
+  }
+}
+
+/*
+***************** LARGE DEVICES *****************
+*/
+
+@media screen and (min-width: 1023px) {
+  .projects__container {
+    width: 901px;
+  }
+
+  .projects__container .swiper-button-prev,
+  .projects__container .swiper-button-next {
+    font-size: 3rem;
+  }
+
+  .projects__container .swiper-button-prev {
+    left: -1rem;
+  }
+
+  .projects__container .swiper-button-next {
+    right: -1rem;
+  }
+
+  .projects__container .swiper-slide {
+    margin-bottom: 6.5rem;
+  }
+
+  .projects__image {
+    width: 321px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+}

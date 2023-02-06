@@ -1,0 +1,75 @@
+{
+  "service1": [
+    {
+      "title": "Habilidades técnicas",
+      "habilidad1": "Uso de herramientas y maquinaria de carpintería",
+      "habilidad2": "Comprensión de técnicas de carpintería",
+      "habilidad3": "Lectura de planos y diagramas técnicos",
+      "barWidth": "90"
+    },
+    {
+      "title": "Habilidades matemáticas",
+      "habilidad1": "Realizar cálculos precisos",
+      "habilidad2": "Buena comprensión de conceptos matemáticos",
+      "habilidad3": "Capacidad para medir y cortar piezas de madera de manera precisa",
+      "barWidth": "90"
+    },
+    {
+      "title": "Otras habilidades importantes",
+      "habilidad1": "Aplicar diferentes técnicas de acabado en la madera",
+      "habilidad2": "La manipulacion de herramientas manuales o máquinas.",
+      "habilidad3": "Conocimiento de diferentes tipos de madera y sus propiedades",
+      "habilidad4": "La manipulacion de herramientas manuales o máquinas.",
+      "barWidth": "90"
+    }
+  ],
+  "service": [
+    {
+      "icon": "ri-layout-4-line",
+      "title": "Conocimientos técnicos",
+      "description": "Conocimiento profundo de la madera y de las herramientas y técnicas utilizadas en carpintería."
+    },
+    {
+      "icon": "ri-quill-pen-line",
+      "title": "Medida y corte",
+      "description": "Habilidad para medir y marcar la madera con precisión y para cortarla utilizando herramientas manuales o máquinas."
+    },
+    {
+      "icon": "ri-keynote-fill",
+      "title": "Ensamblaje",
+      "description": "Saber cómo ensamblar diferentes piezas de madera de manera segura y estructuralmente sólida, utilizando diferentes tipos de uniones."
+    },
+    {
+      "icon": "ri-send-to-back",
+      "title": "Tecnicas de cabado",
+      "description": "Saber cómo aplicar diferentes técnicas de acabado en la madera, como lijado, barnizado, pintado, etc., para lograr un aspecto atractivo y duradero en los muebles y objetos de carpintería."
+    },
+    {
+      "icon": "ri-vip-crown-line",
+      "title": "Creatividad y diseño",
+      "description": "Capacidad para diseñar muebles y objetos de carpintería de manera original y atractiva, utilizando diferentes técnicas y estilos."
+    }
+  ],
+  "skills": [
+    {
+      "title": "Technical knowledge",
+      "description": "In-depth knowledge of wood and the tools and techniques used in carpentry."
+    },
+    {
+      "title": "Measurement and cutting skills",
+      "description": "Ability to measure and mark wood accurately and to cut it using hand tools or machines."
+    },
+    {
+      "title": "Assembly skills",
+      "description": "Know how to assemble different pieces of wood safely and structurally sound, using different types of joints."
+    },
+    {
+      "title": "Finishing skills",
+      "description": "Know how to apply different finishing techniques to wood, such as sanding, varnishing, painting, etc., to achieve an attractive and durable finish on furniture and carpentry objects."
+    },
+    {
+      "title": "Creativity and design",
+      "description": "Ability to design original and attractive furniture and carpentry objects, using different techniques and styles."
+    }
+  ]
+}

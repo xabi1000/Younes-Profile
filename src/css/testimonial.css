@@ -1,0 +1,146 @@
+.testimonial {
+  position: relative;
+}
+
+.testimonial__title {
+}
+
+.testimonial__subtitle {
+}
+
+.section__border {
+}
+
+.testimonial__container {
+}
+
+.testimonial__content {
+  text-align: center;
+}
+
+.testimonial__description {
+  font-family: var(--title-font);
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__name {
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.testimonial__subtitle {
+  font-size: var(----smaller-font-size);
+  color: var(----text-color-light);
+}
+
+.testimonial__img {
+  width: 71px;
+  transform: rotate(31deg);
+  position: absolute;
+  top: 5rem;
+  right: -1.5rem;
+  opacity: 0.1;
+}
+
+/*
+  SWIPER CLASS
+*/
+
+.testimonial__container .swiper-slide {
+  margin-bottom: 4rem;
+}
+
+.testimonial__container .swiper-button-prev::after,
+.testimonial__container .swiper-button-next::after {
+  content: '';
+}
+.testimonial__container .swiper-button-prev,
+.testimonial__container .swiper-button-next {
+  font-size: 2rem;
+  color: var(--title-color);
+  width: initial;
+  height: initial;
+  top: initial;
+  bottom: 0.5rem;
+}
+
+.testimonial__container .swiper-button-prev {
+  left: calc(50% - 3rem);
+}
+
+.testimonial__container .swiper-button-next {
+  right: calc(50% - 3rem);
+}
+
+.testimonial__container .swiper-button-disabled {
+  opacity: initial;
+  color: var(--text-color-light);
+}
+
+.testimonial__container .swiper-pagination-bullets {
+  bottom: 0;
+}
+.testimonial__container .swiper-pagination-bullet {
+  background-color: var(--text-color-light);
+  opacity: initial;
+}
+
+.testimonial__container .swiper-pagination-bullet-active {
+  background-color: var(--title-color);
+}
+
+/*
+=============== BREAKPOINTS ===============
+ */
+
+/* For small devices */
+@media screen and (max-width: 340px) {
+}
+
+/* For medium devices */
+
+@media screen and (min-width: 576px) {
+  .testimonial__container {
+    width: 401px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+}
+
+/*
+***************** LARGE DEVICES *****************
+*/
+
+@media screen and (min-width: 1023px) {
+  .testimonial__container {
+    width: 565px;
+  }
+
+  .testimonial__container .swiper-button-prev,
+  .testimonial__container .swiper-button-next {
+    font-size: 2.5rem;
+  }
+
+  .testimonial__container .swiper-button-prev {
+    left: clac(50% - 5rem);
+  }
+
+  .testimonial__container .swiper-button-next {
+    right: clac(50% - 5rem);
+  }
+  .testimonial__container .swiper-slide {
+    margin-bottom: 6rem;
+  }
+  .testimonial__description {
+    font-size: var(--h2-font-size);
+    margin-bottom: 2rem;
+  }
+  .testimonial__img {
+    width: 201px;
+    top: 13rem;
+    right: 4rem;
+  }
+}

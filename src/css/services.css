@@ -1,0 +1,95 @@
+.services__container {
+  row-gap: 2.5rem;
+  justify-content: center;
+}
+
+.services__card {
+  position: relative;
+  width: 228px;
+  min-height: 361px;
+  background-color: var(--container-color);
+  text-align: center;
+  padding: 3.5rem 1rem;
+  border-radius: 7.25rem;
+  outline: 2.3px solid transparent;
+  outline-offset: 11px;
+  transition: outline 1.5s ease;
+  cursor: pointer;
+  transition: background 0.5s; /* for dark mode animation */
+}
+
+.services__card i {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  transition: transform 0.9s;
+}
+
+.services__title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1.5rem;
+}
+
+.services__description {
+}
+
+.services__border {
+  width: 247px;
+  height: 343px;
+  border-radius: 7.75rem;
+  border: 2.3px solid var(--text-color-light);
+  position: absolute;
+  inset: 0;
+  left: -10px;
+  margin: auto;
+  z-index: -1;
+  transition: opacity 0.6s ease-in-out;
+  opacity: 0;
+}
+
+.services__card:hover i {
+  transform: rotateY(360deg);
+}
+
+.services__card:hover {
+  outline: 2.3px solid var(--text-color-light);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+
+@media screen and (min-width: 576px) {
+  .services__container {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 5rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 767px) {
+}
+
+/*
+***************** LARGE DEVICES *****************
+*/
+
+@media screen and (min-width: 1023px) {
+  .services__container {
+    grid-template-columns: repeat(3, max-content);
+  }
+  .services__card {
+    width: 245px;
+    height: 345px;
+    border-radius: 7.6rem;
+    padding: 3.5rem 1.5rem;
+  }
+  .services__card i {
+    font-size: 2.5rem;
+  }
+  .services__border {
+    width: 265px;
+    height: 365px;
+    border-radius: 8.25rem;
+  }
+}

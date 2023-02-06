@@ -1,0 +1,21 @@
+---
+import { skills } from '../../data/skills.json';
+import '../../css/skills.css';
+---
+
+<section class='skills section' id='skills'>
+  <h2 class='section__titlel'>SKILLS</h2>
+  <span class='section__subtitle'>What i offer</span>
+
+  <div class='skills__container container grid section__border'>
+    {
+      skills.map(({ icon, title, description }) => (
+        <div class='skills__card'>
+          <i class={icon} />
+          <h2 class='skills__title'>{title}</h2>
+          <p class='skills__description' set:html={description} />
+        </div>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,184 @@
+---
+const emailPattern: string = '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$';
+const NamePattern: string = '^[a-zA-Z ]+$';
+---
+
+<form action='' class='contact__form' id='contactForm'>
+  <div class='contact__form-div'>
+    <label for='contactName' class='contact__form-tag'>Name</label>
+    <input
+      type='text'
+      id='contactName'
+      class='contact__form-input'
+      name='contactName'
+      placeholder='Your @Name'
+      pattern={NamePattern}
+      title='The name can only contain letters and spaces'
+      required
+    />
+  </div>
+
+  <div class='contact__form-div'>
+    <label for='contactEmail' class='contact__form-tag'>E-mail</label>
+    <input
+      type='text'
+      id='contactEmail'
+      class='contact__form-input'
+      name='contactEmail'
+      placeholder='Your @E-mail'
+      pattern={emailPattern}
+      title='The email must have a valid format'
+      required
+    />
+  </div>
+
+  <div class='contact__form-div contact__form-area'>
+    <label for='contactProject' class='contact__form-tag'>Projects</label>
+    <textarea
+      name='contactProject'
+      id='contactProject'
+      class='contact__form-input'
+      placeholder='Your @Message'
+      title='I will try to answer as soon as possible, thank you for your confidence'
+      required></textarea>
+  </div>
+
+  <p class='contact__message' id='contactMessage'></p>
+  <button type='submit' class='contact__button'>
+    Submit <i class='ri-arrow-right-up-line'></i>
+  </button>
+</form>
+
+<style>
+  .contact__form {
+    position: relative;
+    row-gap: 2rem;
+  }
+
+  .contact__form-div {
+    position: relative;
+    height: 4rem;
+  }
+
+  .contact__form-tag {
+  }
+
+  .contact__form-div {
+  }
+
+  .contact__form-tag {
+    position: absolute;
+    top: -0.75rem;
+    left: 1.25rem;
+    z-index: 10;
+    background-color: var(--body-color);
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    padding: 0.35rem;
+    transition: background 0.5s; /* for dark mode animation */
+  }
+
+  .contact__form-area {
+    min-height: 10rem;
+  }
+
+  .contact__form-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--text-color-light);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    font-size: var(--normal-font-size);
+    font-family: var(--title-font);
+    color: var(--title-color);
+    background: none;
+    outline: none;
+    z-index: 1;
+  }
+
+  .contact__form textarea {
+    resize: none;
+  }
+
+  .contact__message {
+    font-size: var(--small-font-size);
+    position: absolute;
+    bottom: 2.8rem;
+    left: 1.5rem;
+  }
+
+  .contact__form .contact__button {
+    border: none;
+    background: none;
+    font-size: var(--h2-font-size);
+    font-family: var(--title-font);
+    font-weight: var(--font-semi-bold);
+    cursor: pointer;
+    outline: none;
+    margin-top: 0.75rem;
+    color: var(--title-color);
+  }
+  .contact__form .contact__button i {
+    font-size: 1rem;
+    font-weight: initial;
+    color: var(--title-color);
+  }
+
+  .color-blue {
+    color: hsl(207, 56%, 45%);
+  }
+  .color-red {
+    color: hsl(4, 71%, 50%);
+  }
+</style>
+
+<script>
+  import { getId, getClass, getAllClass } from '../js/selectors.js';
+  import emailjs from '@emailjs/browser';
+
+  const $contactForm = getId('contactForm') as HTMLFormElement;
+  const $contactName = getId('contactName') as HTMLInputElement;
+  const $contactEmail = getId('contactEmail') as HTMLInputElement;
+  const $contactProject = getId('contactProject') as HTMLTextAreaElement;
+  const $contactMessage = getId('contactMessage') as HTMLParagraphElement;
+
+  const sendEmail = (e: Event) => {
+    e.preventDefault();
+    if (
+      $contactName.value === '' ||
+      $contactEmail.value === '' ||
+      $contactProject.value === ''
+    ) {
+      $contactMessage.classList.remove('color-blue');
+      $contactMessage.classList.add('color-red');
+      $contactMessage.textContent = 'Write all the input field 👎';
+    } else {
+      // set Public Key as global settings
+      emailjs
+        .sendForm(
+          'service_6d6baqv',
+          'template_2xy6jgi',
+          '#contactForm',
+          'TDV8JbgKgEEm_DNMm'
+        )
+        .then(() => {
+          $contactMessage.classList.remove('color-blue');
+          $contactMessage.classList.add('color-blue');
+          $contactMessage.textContent = 'Message sent ✅ ';
+
+          setTimeout(() => {
+            $contactMessage.textContent = '';
+            $contactName.value = '';
+            $contactEmail.value = '';
+            $contactProject.value = '';
+          }, 5000);
+        });
+    }
+  };
+
+  $contactForm.addEventListener('submit', sendEmail);
+</script>

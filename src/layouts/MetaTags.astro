@@ -1,0 +1,38 @@
+---
+export interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <!-- OPEN GRAPH -->
+    <meta property='og:title' content='CHABI-Younes Profile' />
+    <meta property='og:site_name' content='Chabi Younes' />
+    <meta property='og:url' content='https://chabi-younes.netlify.app' />
+    <meta
+      property='og:description'
+      content="If you're looking for a professional carpenter, I'm your guy. I have over 15 years of experience in the field, and I can offer you exceptional service and high-quality work. If you're interested in collaborating on your projects, don't hesitate to get in touch. I'm looking forward to working with you! "
+    />
+    <meta property='og:type' content='website' />
+    <meta property='og:image' content='/assets/img/youImagGrapf-min.jpeg' />
+
+    <!-- OPEN GRAPH  TWITER-->
+    <meta name='twitter:card' content='summary' />
+    <meta name='twitter:site' content='@flickr' />
+    <meta name='twitter:title' content='CHABI-Younes Profile' />
+    <meta
+      name='twitter:description'
+      content="If you're looking for a professional carpenter, I'm your guy. I have over 15 years of experience in the field, and I can offer you exceptional service and high-quality work. If you're interested in collaborating on your projects, don't hesitate to get in touch. I'm looking forward to working with you!"
+    />
+    <meta name='twitter:image' content='/assets/img/youImagGrapf-min.jpeg' />
+
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+</html>

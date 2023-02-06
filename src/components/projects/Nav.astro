@@ -1,0 +1,27 @@
+---
+const sectionsName = [
+  'Dressings',
+  'Kichens',
+  'Doors',
+  'Bathroomes',
+  'Offices',
+  'videos',
+];
+---
+
+<header class='header'>
+  <nav class='nav'>
+    <a href='/#projects' class='nav__link'>Go to Home</a>
+    <ul class='menu'>
+      {
+        sectionsName.map((name) => (
+          <li class='menu__item'>
+            <a href={`#${name.toLowerCase()}`} class='menu__link'>
+              {name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>

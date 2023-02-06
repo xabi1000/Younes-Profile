@@ -1,0 +1,16 @@
+{
+  "SocialMedia": [
+    {
+      "icon": "ri-facebook-circle-line",
+      "href": "https://www.facebook.com/younes.chabi.5"
+    },
+    {
+      "icon": "ri-whatsapp-line",
+      "href": "https://api.whatsapp.com/send?phone=+447946299689&text=Good day, and welcome! How can I be of help?"
+    },
+    {
+      "icon": "ri-messenger-line",
+      "href": "https://m.me/100003219723050"
+    }
+  ]
+}

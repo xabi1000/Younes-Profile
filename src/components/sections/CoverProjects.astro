@@ -1,0 +1,60 @@
+---
+import { project } from '../../data/cover_projects.json';
+import '../../css/cover_projects.css';
+---
+
+<section class='projects section' id='projects'>
+  <h2 class='section__titlel'>Projects</h2>
+  <span class='section__subtitle'>Most recent work</span>
+
+  <div class='container section__border'>
+    <div class='projects__container swiper'>
+      <div class='swiper-wrapper'>
+        <!-- ========PROJECT1======== -->
+        {
+          project.map(({ imageJpg, imageWebp, subtitle, title, icon }) => (
+            <div class='projects__content swiper-slide'>
+              <picture>
+                <source srcset={imageWebp} type='image/webp' />
+                <source srcset={imageJpg} type='image/jpeg' />
+                <img
+                  class='projects__image'
+                  src={imageJpg}
+                  alt='projects image'
+                />
+              </picture>
+
+              <div style=' display: grid; place-items: center;'>
+                <span class='projects__subtitle'>{subtitle}</span>
+                <h1 class='projects__title'>{title}</h1>
+                <div>
+                  <a
+                    href={`/projects#${title}`.toLowerCase()}
+                    class='projects__button'
+                  >
+                    View demo <i class={icon} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+        <!-- ========PROJECT1======== -->
+      </div>
+
+      <div class='swiper-button-next'>
+        <i class='ri-arrow-right-s-line'></i>
+      </div>
+
+      <div class='swiper-button-prev'>
+        <i class='ri-arrow-left-s-line'></i>
+      </div>
+
+      <div class='swiper-pagination'></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import '../../js/swiper-projects.js';
+</script>

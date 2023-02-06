@@ -1,0 +1,38 @@
+---
+import { information } from '../../data/contact.json';
+import Form from '../Form.astro';
+import '../../css/contact.css';
+---
+
+<section class='contact section' id='contact'>
+  <h2 class='section__titlel text__gradient'>Contact Me</h2>
+  <span class='section__subtitle'>Get in touch</span>
+
+  <div class='contact__container container grid section__border'>
+    <div class='contact__content'>
+      <h3 class='contact__title'>
+        <i class='ri-chat-3-line'></i> Talk to me
+      </h3>
+      <div class='contact__info'>
+        {
+          information.map(({ title, info, href }) => (
+            <div class='contact__data'>
+              <span class='contact__data-title'>{title}</span>
+              <span class='contact__data-info'>{info}</span>
+              <a href={href} target='_blank' class='contact__button'>
+                Visite <i class='ri-arrow-right-line' />
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class='contact__content'>
+      <h3 class='contact__title'>
+        <i class='ri-send-plane-line'></i>Write Your Project
+      </h3>
+
+      <Form />
+    </div>
+  </div>
+</section>

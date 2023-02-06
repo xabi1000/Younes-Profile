@@ -1,0 +1,48 @@
+<a href='#home' id='scrollUp' class='scroll-up'>
+  <i class='ri-arrow-up-line'></i>
+</a>
+<style>
+  .scroll-up {
+    position: fixed;
+    inset: auto 1.5rem -30% auto;
+    background-color: var(--body-color);
+    box-shadow: 0 5px 11px hsla(207, 24%, 35%, 0.15);
+    display: inline-flex;
+    padding: 0.35rem;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    color: var(--title-color);
+    z-index: var(--z-tooltip);
+    transition: bottom 0.3s, transform 0.3s;
+  }
+
+  .scroll-up:hover {
+    transform: translateY(-0.25rem);
+    font-size: 1.5rem;
+  }
+
+  .show-scroll {
+    bottom: 7rem;
+  }
+
+  @media screen and (min-width: 1023px) {
+    .scroll-up {
+      right: 3rem;
+    }
+    .show-scroll {
+      bottom: 5rem;
+    }
+  }
+</style>
+
+<script>
+  import { getId } from '../js/selectors';
+
+  const scrollUp = () => {
+    const scrollToUp = getId('scrollUp');
+    scrollY >= 350
+      ? scrollToUp.classList.add('show-scroll')
+      : scrollToUp.classList.remove('show-scroll');
+  };
+  window.addEventListener('scroll', scrollUp);
+</script>
