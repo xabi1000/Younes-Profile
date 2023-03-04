@@ -2,8 +2,8 @@
   "information": [
     {
       "title": "Phone number",
-      "info": "+447946299689",
-      "href": "tel:+447946299689"
+      "info": "+447459428852",
+      "href": "tel:+447459428852"
     },
     {
       "title": "Messenger",
@@ -13,12 +13,12 @@
     {
       "title": "WhatsApp",
       "info": "Chabi Younes",
-      "href": "https://api.whatsapp.com/send?phone=+447946299689&text=Good day, and welcome! How can I be of help?"
+      "href": "https://api.whatsapp.com/send?phone=+447459428852&text=Good day, and welcome! How can I be of help?"
     },
     {
       "title": "LinkedIn",
       "info": "Younes Chabi",
-      "href": "https://www.linkedin.com/in/younes-chabi-b3488b180/"
+      "href": "https://www.linkedin.com/in/you-chabi-102ab6258/"
     }
   ]
 }
